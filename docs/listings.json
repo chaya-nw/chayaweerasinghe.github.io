@@ -1,0 +1,68 @@
+[
+  {
+    "listing": "/talks.html",
+    "items": [
+      "/talks/2023-03-13/index.html",
+      "/talks/2019-10-25/index.html",
+      "/talks/2019-09-12/index.html",
+      "/talks/2018-12-09/index.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": []
+  },
+  {
+    "listing": "/publications.html",
+    "items": [
+      "/talks.html",
+      "/projects.html",
+      "/index.html",
+      "/special.html",
+      "/talks/2023-03-13/index.html",
+      "/talks/2019-10-25/index.html",
+      "/talks/2019-09-12/index.html",
+      "/talks/2018-12-09/index.html"
+    ]
+  },
+  {
+    "listing": "/publication/index.html",
+    "items": [
+      "/publication/kimchi/index.html",
+      "/publication/orrrr/index.html"
+    ]
+  },
+  {
+    "listing": "/teaching.html",
+    "items": []
+  },
+  {
+    "listing": "/talks1.html",
+    "items": [
+      "/talks1/2023-03-13/index.html",
+      "/talks1/2019-10-25/index.html",
+      "/talks1/2019-09-12/index.html",
+      "/talks1/2018-12-09/index.html"
+    ]
+  },
+  {
+    "listing": "/talks/index.html",
+    "items": [
+      "/talks/numbats-2024Apr/index.html",
+      "/talks/isf-2023/index.html",
+      "/talks/ieee-sam-2020/index.html"
+    ]
+  },
+  {
+    "listing": "/talks/talks.html",
+    "items": [
+      "/talks/imsarpm-2024/index.html",
+      "/talks/workshop-2023/index.html",
+      "/talks/anzesg-2023/index.html",
+      "/talks/bayescomp-2023/index.html",
+      "/talks/irsps-2019/index.html",
+      "/talks/kdu-2019/index.html",
+      "/talks/sympoRuhuna-2018/index.html"
+    ]
+  }
+]

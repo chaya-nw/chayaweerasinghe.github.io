@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Chaya Weerasinghe"
+  navbar:
+    pinned: true
+    background: primary
+    right:
+      - href: index.qmd
+        text: Home
+      - href: publications.qmd
+        text: Research
+      - href: talks/talks.qmd
+        text: Talks
+      - href: teaching.qmd
+        text: Teaching
+      - href: https://drive.google.com/file/d/1rcOm53UhyHrr6RUHvJxQFUYWn3MFDh-P/view
+        text: CV
+      - icon: envelope
+        href: mailto:chaya.w.patabedimuhamdiramalage@monash.edu
+  page-footer: 
+    background: light
+    #right: "© 2024, Chaya Weerasinghe"
+    #This website is built with {{< fa heart title="a heart">}} and [Quarto](https://quarto.org/)
+format:
+  html:
+    theme:
+      - mytheme.scss
+    css: styles.css
+    page-layout: full
+    sidebar: false
+    toc: true
+editor: visual
+
+extensions:
+  - quarto-ext/fontawesome
+

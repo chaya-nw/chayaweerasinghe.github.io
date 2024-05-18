@@ -1,0 +1,55 @@
+---
+pagetitle: "Chaya Weerasinghe"
+image: images/chaya_profile.jpeg
+toc: false
+about: 
+  template: trestles
+  image-shape: round
+  #image-width: 23em
+  links:
+    - text: "{{< fa envelope >}}"
+      href: mailto:chaya.w.patabedimuhamdiramalage@monash.edu
+    - text: "{{< ai google-scholar >}}"
+      href: https://scholar.google.com.au/citations?user=2XCIhUQAAAAJ&hl=en
+   # - text: "{{< fa brands github >}}"
+   #   href: https://github.com/chaya-nw
+    - text: "{{< ai orcid >}}"
+      href: https://orcid.org/0000-0002-7824-4043
+    - text: "{{< fa brands linkedin >}}"
+      href: https://www.linkedin.com/in/chaya-weerasinghe-54426510a/
+---
+
+### Hi! {style="color: black"}
+
+::: {#about}
+Welcome to my home page. I am currently a final year Ph.D. student in the Department of Econometrics and Business Statistics at Monash University, supervised by [Professor Gael M. Martin](https://users.monash.edu.au/~gmartin/), [Professor David T. Frazier](https://dtfrazier.netlify.app/) and [Dr. Ruben Loaiza-Maya](https://sites.google.com/view/rubenloaizamaya/your-page-title). I am currently working on developing a novel Approximate Bayesian Computation method which delivers inferences that are more robust to model misspecification.
+
+I am also working as a teaching associate in the Department of Econometrics and Business Statistics at Monash University.
+:::
+
+\
+
+#### Education
+
+<!-- <i class="bi-alarm"></i>-->
+
+<p class="custom-subtitle">
+
+{{< fa graduation-cap >}} Ph.D. Candidate (begun 2021) Monash University, Australia
+
+</p>
+
+<p class="custom-subtitle">
+
+{{< fa graduation-cap >}} B.Sc.(Hons) in Statistics (2015 -2019) University of Kelaniya, Sri Lanka
+
+</p>
+
+\
+
+#### Research Interests
+
+-   Bayesian Inference and Forecasting
+-   Approximate Bayesian Methods
+-   Econometrics
+-   Time Series Analysis

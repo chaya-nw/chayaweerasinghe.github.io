@@ -1,0 +1,46 @@
+/*-- scss:defaults --*/
+  
+  // Import fonts (define mainfont in _quarto.yml)
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@300&family=Roboto+Mono:wght@300&display=swap');
+
+// Colors
+$light-sage-green: #354d72;
+$dark-sage-green: #98A08D;
+$light-cyan: #e6f5f7;
+  $dark-cyan: #174248;
+  $cream: #FDFBF7;
+  $dark-gray: #5A5856;
+  $gray: #64605f;
+  $light-gray: #949799;
+  $dark-green: #a07828;
+  $black: #000000;
+  $burnt-orange: #c78c50;
+  $dark-brown: #9a6531;
+  $white: #FFFFFF;
+  $light-blue: #5a7bab;
+  
+  
+  // Base document colors
+$navbar-bg: $light-sage-green;
+$navbar-fg: $white; 
+$navbar-hl: $burnt-orange; 
+$body-bg: $cream;
+$body-color: $dark-gray;
+$footer-bg: $cream; 
+$link-color: $light-blue;
+$title-block-banner-color: $white;
+
+$btn-link-color:$white;
+$btn-link-hover-color: $white;
+
+
+
+
+/*body {
+ /* background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-position: center center;*/
+  /*background-attachment: fixed;*/
+
+/*$font-family-sans-serif: 'Montserrat';/*

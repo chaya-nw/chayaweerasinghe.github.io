@@ -1,0 +1,67 @@
+---
+pagetitle: "Chaya Weerasinghe - Teaching"
+format: html
+embed-resources: true
+---
+
+## [Teaching Experience]{style="color: grey"}
+
+\
+
+#### Teaching Associate{style="color: black"}
+
+###### Department of Econometrics and Business Statistics, Monash University{style="color: black"}
+
+\
+Conducted the tutorial sessions for:
+
+-   ETC1010/ETC5510 Introduction to Data Analysis, Semester 1 2023 <a class="badge rounded-pill badge-blue" href="https://handbook.monash.edu/2024/units/ETC1010">Handbook entry</a>
+
+-   ETF3500/ETF5500 High Dimensional Data Analysis, Semester 2 2023 <a class="badge rounded-pill badge-blue" href="https://handbook.monash.edu/2024/units/ETF3500">Handbook entry</a>
+
+------------------------------------------------------------------------
+
+\
+
+#### Temporary Lecturer{style="color: black"}
+
+###### Department of Statistics & Computer Science, University of Kelaniya{style="color: black"}
+
+\
+Conducted the lectures for:
+
+-   STAT 14552 Statistics for Natural Science, Academic year 2017/2018
+
+-   COST 21544 Mathematical Foundation I, Academic year 2018/2019
+
+-   COST 31554 Mathematics for Information Technology, Academic year 2018/2019
+
+-   COST 22594 Mathematical Foundation III, Academic year 2018/2019
+
+-   COST 32574 Statistics for Information Technology, Academic year 2018/2019
+
+\
+Coordinated and organized the lectures:
+
+-   STAT 32543 Research Methodology, Data Analysis and Report Writing, Academic year 2018/2019
+
+------------------------------------------------------------------------
+
+\
+
+#### Temporary Demonstrator{style="color: black"}
+
+###### Department of Statistics & Computer Science, University of Kelaniya{style="color: black"}
+
+\
+Conducted the tutorial sessions for:
+
+-   STAT 12542 Optimization I, Academic year 2017/2018
+
+-   STAT 21522 Optimization II, Academic year 2017/2018
+
+-   STAT 44093 Econometrics (Practical session), Academic year 2017/2018
+
+-   STAT 11521 Statistical Laboratory (Practical session), Academic year 2017/2018
+
+------------------------------------------------------------------------

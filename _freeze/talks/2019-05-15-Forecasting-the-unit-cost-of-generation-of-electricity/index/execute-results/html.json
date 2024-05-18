@@ -1,0 +1,14 @@
+{
+  "hash": "41e461d1342fe93f3d5055f8f43499f2",
+  "result": {
+    "markdown": "---\ntitle: \"Forecasting the unit cost of generation of electricity in a diesel power station using ARIMA model\"\ncategories: [Poster Presentation]\nimage: infinity.gif\n---\n\n::: {.cell}\n::: {.cell-output-display}\n![I was able to receive the award for the best poster presentation](sam_an.jpg){width=1024}\n:::\n:::\n\n\n# Overview\n\nMy *very first time* presenting a research 🙂, and this is in my final year of the undergraduate degree where I presented some initial findings of my undergraduate research via a poster presentation. Here, I was able to receive the award for the best poster presentation.\n\n**Date**: December 09, 2018\\\n**Event**: 1^st^ National Undergraduate Research Symposium\\\n**Location**: Faculty of Science, University of Ruhuna, Sri Lanka\n\n\\\n\n# Abstract\n\nElectricity is the most inconsistent of all types of energy. The national grid system which is evolved to deliver electricity must be always kept in balance so that it must have a sufficient production at all times to meet the demand of electricity while minimizing the generation costs of electricity. Future generation costs of electricity must be predicted in order to achieve any of these above-mentioned goals. Thermal, hydro and Non-Conventional Renewable Energy are the primary electricity generating sources in Sri Lanka. Referring to the Generation Performance Reports published by Public Utilities Commission of Sri Lanka, there is a high average Unit Cost (UC) of generation of electricity among the Diesel Power Stations (DPS) in thermal sector. This study presents an extensive process of building a forecasting model for the UC of generation of electricity of a DPS in Sri Lanka by using Auto Regressive Integrated Moving Average (ARIMA) model. The study is conducted as a case study in a leading DPS in Western Province of Sri Lanka which has a high range of change of Unit Cost compared with other DPS. The results revealed that ARIMA (2,1,2) as the best model with lowest Akaike Information Criterion (AIC) for forecasting the UC of electricity generation for the selected DPS. The forecasting performance of the model was evaluated using Mean Absolute Percentage Error (MAPE) and Root Mean Square Error (RMSE).\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
