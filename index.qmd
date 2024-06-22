@@ -35,13 +35,13 @@ I am also working as a teaching associate in the Department of Econometrics and 
 
 <p class="custom-subtitle">
 
-{{< fa graduation-cap >}} Ph.D. Candidate (begun 2021) Monash University, Australia
+{{< fa graduation-cap >}} Ph.D. Candidate (begun 2021) Monash University, Australia.
 
 </p>
 
 <p class="custom-subtitle">
 
-{{< fa graduation-cap >}} B.Sc.(Hons) in Statistics (2015 -2019) University of Kelaniya, Sri Lanka
+{{< fa graduation-cap >}} B.Sc.(Hons) in Statistics (2015 -2019) University of Kelaniya, Sri Lanka.
 
 </p>
 
