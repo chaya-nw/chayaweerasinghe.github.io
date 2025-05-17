@@ -1,0 +1,69 @@
+/* title */
+
+/* remove styling from title block partial */
+#title-block-header, #title-block-header-title {
+  all: unset;
+  background-image: none !important;
+}
+
+.listing-title {
+  font-size: 1.2em !important;
+  font-weight: 550 !important;
+}
+
+
+/* page title  */
+#title-block-header.quarto-title-block.default .quarto-title .title {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 1.2em 0 -0.8em 0;
+  padding: 0 0 0.1em 0;
+  color: #000000;
+}
+
+/* text below page title */
+.description p {
+  text-align: center; 
+  margin: 0 1em 10em 1em;
+  padding: 0 0 6em 0;
+}
+
+.description a {
+  text-decoration: underline !important;
+}
+
+.description a:hover {
+  text-decoration: none !important;
+}
+
+/* listing cards  */
+.card {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    border-radius: 8px 8px 0px 0px;
+}
+
+
+/* unvisited link */
+a:not([class]):link {
+  color: #354d72;
+  text-decoration: none;
+}
+
+/* visited link */
+a:not([class]):visited {
+  color: #354d72;
+  text-decoration: none;
+}
+
+
+/* mouse over link */
+a:not([class]):hover {
+  color: #000000;
+  text-decoration: none;
+}

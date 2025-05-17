@@ -1,0 +1,100 @@
+/* css styles */
+
+
+/* heading, subtitle, and blurb */
+.entity-contents {
+  text-align: right !important;
+  padding: 0 2em 0 2em;
+}
+
+/* blurb */
+.about-contents {
+  padding: 0 0 0 2em !important;
+}
+
+/* social links: block of links 
+.about-entity .about-links {
+  justify-content: flex-end !important;
+  column-gap: 0em !important;
+  font-size: 1.2em !important;
+}*/
+
+/* social links: individual links
+.about-entity .about-link {
+  padding: 0.25em 0.25em !important;
+  border: none !important;  
+}*/
+
+
+
+
+.badge {
+  border-radius: 15px;
+  opacity: .75;
+  text-decoration: none;
+}
+
+.badge {
+  color: #EDE3DA !important;
+}
+
+
+.badge-blue {
+  background: #4673B8;
+}
+
+
+
+
+
+.banner-title {
+  font-size: 54px;
+  margin-bottom: 10px;
+}
+
+.banner-text {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.banner {
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  font-weight: 400;
+  color: #fff;
+}
+
+
+div.quarto-about-trestles .about-entity .about-link:hover {
+  background-color: #1051e8;
+    color:#FDFBF7;
+}
+
+
+div.quarto-about-trestles .about-entity .about-link {
+  border: none;
+  font-size: 20pt;
+  padding: 3pt;
+  color: #354d72;
+}
+
+/* unvisited link */
+a:not([class]):link {
+  color: #223a5e;
+  text-decoration: none;
+}
+
+/* visited link */
+a:not([class]):visited {
+  color:#223a5e;
+  text-decoration: none;
+}
+
+
+/* mouse over link */
+a:not([class]):hover {
+  color: #426eb3;
+  text-decoration: none;
+}
+  
+
