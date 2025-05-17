@@ -4,19 +4,23 @@ project:
 
 website:
   title: "Chaya Weerasinghe"
+  #favicon:
+  page-navigation: true
+  back-to-top-navigation: true
+  
   navbar:
-    pinned: true
+    pinned: false
     background: primary
     right:
       - href: index.qmd
         text: Home
-      - href: publications.qmd
+      - href: publication/index.qmd
         text: Research
-      - href: talks/talks.qmd
+      - href: talks/index.qmd
         text: Talks
-      - href: teaching.qmd
-        text: Teaching
-      - href: https://drive.google.com/file/d/1rcOm53UhyHrr6RUHvJxQFUYWn3MFDh-P/view
+      - href: experience/index.qmd
+        text: Work Experience
+      - href: https://drive.google.com/file/d/1gOqujdAnHjH-4Zfs9Ly2hbGuRCm10pUS/view?usp=sharing
         text: CV
       - icon: envelope
         href: mailto:chaya.w.patabedimuhamdiramalage@monash.edu
@@ -24,16 +28,25 @@ website:
     background: light
     #right: "© 2024, Chaya Weerasinghe"
     #This website is built with {{< fa heart title="a heart">}} and [Quarto](https://quarto.org/)
+
+
 format:
   html:
     theme:
+      light:
+      - cosmo
       - mytheme.scss
     css: styles.css
     page-layout: full
     sidebar: false
     toc: true
+    pagetitle: "{{< meta title >}}"
+    lightbox: true
 editor: visual
 
+execute: 
+  freeze: auto
+  
 extensions:
   - quarto-ext/fontawesome
 
