@@ -1,76 +1,310 @@
-/* title */
+/* =====================================================
+   RESEARCH PAGE
+===================================================== */
 
-/* remove styling from title block partial */
-#title-block-header, #title-block-header-title {
-  all: unset;
-  background-image: none !important;
+:root {
+  --research-content-width: 1180px;
+  --research-page-padding: 2rem;
+  --navy-blue: #0b2e6b;
+  --page-cream: #FDFBF7;
+  --paragraph-color: #2f2f2f;
 }
 
-.listing-title {
-  font-size: 1.1em !important;
-  font-weight: 550 !important;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* page title */
-#title-block-header.quarto-title-block.default .quarto-title .title {
-  font-size: 2.5em;
-  text-align: center;
-  margin: 1.2em 0 -0.8em 0;
-  padding: 0 0 0.1em 0;
+/* Remove unwanted Quarto title spacing */
+#title-block-header {
+  display: none;
+}
+
+/* =====================================================
+   PAGE HEADING
+===================================================== */
+
+.page-heading {
+  width: 90vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+
+  padding-top: 0.8rem;
+  padding-right: max(
+    var(--research-page-padding),
+    calc((100vw - var(--research-content-width)) / 2)
+  );
+  padding-bottom: 1.5rem;
+  padding-left: max(
+    var(--research-page-padding),
+    calc((100vw - var(--research-content-width)) / 2)
+  );
+
+  background: linear-gradient(
+    135deg,
+    #fdfbf7 0%,
+    #f7fafc 40%,
+    #eef5fb 100%
+  );
+}
+
+.page-section-title {
+  display: block;
+  margin: 0 0 0.35rem;
+
+  color: var(--navy-blue) !important;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.page-heading p {
+  max-width: 700px;
+  margin: 0 !important;
+
   color: #000000;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
-/* text below page title */
-.description p {
-  text-align: center; 
-  margin: 0 1em 10em 1em;
-  padding: 0 0 6em 0;
+.page-heading::after {
+  content: "";
+  display: block;
+
+  width: 90px;
+  height: 2px;
+  margin-top: 1rem;
+
+  background: rgba(11, 46, 107, 0.20);
 }
 
-.description a {
-  text-decoration: underline !important;
+/* =====================================================
+   PUBLICATION LIST
+===================================================== */
+
+.publication-list {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 2rem 5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
-.description a:hover {
-  text-decoration: none !important;
+
+/* =====================================================
+   PUBLICATION CARD
+===================================================== */
+
+.publication-card {
+  width: 100%;
+  padding: 1rem 1rem;
+
+  background: #fffbf2;
+
+  border: 1px solid rgba(11, 46, 107, 0.14);
+  border-radius: 14px;
+
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
-/* listing cards */
-.card {
-  background: #fffbf2; /* Solid background for contrast #fefdfa*/
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 13px;
-  margin-bottom: 20px;
-  transition: all 0.3s ease-in-out;
-}
-
-.card:hover {
-  color: #354d72;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+.publication-card:hover {
   transform: translateY(-3px);
+  box-shadow: 0 9px 22px rgba(0, 0, 0, 0.12);
 }
 
-/* card image styling */
-.card-img {
-  border-radius: 10px 10px 0px 0px;
+.publication-card-content {
+  width: 100%;
 }
 
-/* unvisited link */
-a:not([class]):link {
-  color: #354d72;
-  text-decoration: none;
+
+/* =====================================================
+   TITLE + SUBTITLE
+===================================================== */
+
+.publication-title {
+  margin: 0 0 0.35rem;
+
+  color: var(--navy-blue);
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
 }
 
-/* visited link */
-a:not([class]):visited {
-  color: #354d72;
-  text-decoration: none;
+.publication-subtitle {
+  margin-bottom: 0.5rem;
+
+  color: #64605f;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 500;
 }
 
-/* mouse over link */
-a:not([class]):hover {
-  color: #000000;
-  text-decoration: none;
+
+/* =====================================================
+   CATEGORIES
+===================================================== */
+
+.publication-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+
+  margin-top: 0.6rem;
 }
 
+/* Publication categories */
+.publication-category {
+  display: inline-block;
+
+  padding: 0.28rem 0.6rem;
+
+  color: var(--navy-blue);
+
+  background: linear-gradient(
+    135deg,
+    rgba(11,46,107,0.05) 0%,
+    rgba(90,123,171,0.10) 100%
+ );
+
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+
+  transition: all 0.25s ease;
+}
+
+.publication-category:hover {
+  color: #ffffff;
+
+  background: var(--navy-blue);
+
+  border-color: var(--navy-blue);
+}
+
+
+/* =====================================================
+   AUTHORS + DATE
+===================================================== */
+
+.publication-card-footer {
+  margin-top: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.8rem;
+}
+
+.publication-authors,
+.publication-date {
+  color: #727b84;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  text-transform: none;
+}
+
+.publication-authors {
+  flex: 1;
+}
+
+.publication-date {
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   READ-MORE BUTTON
+===================================================== */
+
+.publication-button-row {
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.publication-read-more {
+  display: inline-block;
+
+  padding: 0.3rem 0.6rem;
+
+  color: #ffffff !important;
+  background: #0b2e6b;
+
+  border: 1px solid #0b2e6b;
+  border-radius: 999px;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  text-decoration: none !important;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.publication-read-more:hover {
+  color: #ffffff !important;
+  background: #5a7bab;
+  border-color: #5a7bab;
+
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .publication-list {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .publication-card {
+    padding: 1.6rem;
+  }
+
+  .publication-card-footer {
+    margin-top: 2rem;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .publication-date {
+    white-space: normal;
+  }
+
+  .publication-button-row {
+    justify-content: flex-start;
+  }
+}

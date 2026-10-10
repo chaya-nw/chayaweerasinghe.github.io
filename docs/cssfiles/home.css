@@ -1,0 +1,302 @@
+/* Fix navbar spacing */
+.navbar {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #FDFBF7;
+}
+
+/* Remove extra spacing from Quarto page */
+main.content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Remove space between navbar and first section */
+.page-columns {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Remove spacing from Quarto containers */
+#quarto-content,
+#quarto-document-content,
+.page-full,
+.content,
+main {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Full-width homepage section */
+.hero-wrapper {
+  width: 100vw;
+  min-height: calc(100vh - 70px);
+  margin-left: calc(-50vw + 50%);
+  margin-top: 0;
+  padding: 4rem 2rem;
+  background: #FDFBF7;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Main layout:
+   photo | vertical line | text */
+.hero-content {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1px 360px;
+  column-gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Left image column */
+.hero-image-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Arch-shaped profile image */
+.hero-image {
+  width: 320px;
+  height: 440px;
+  object-fit: cover;
+  object-position: center top;
+
+  border-radius: 160px 160px 24px 24px;
+
+  border: none;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+  background: #ffffff;
+}
+
+/* Contact icons */
+.hero-icons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.hero-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.hero-icons i {
+  font-size: 1.5rem;
+}
+
+.icon-img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* Email */
+.hero-icons a:nth-child(1) i {
+  color: #0b2e6b;
+}
+
+/* Google Scholar */
+.scholar-icon {
+  filter: invert(32%) sepia(94%) saturate(1731%)
+    hue-rotate(214deg) brightness(97%) contrast(98%);
+}
+
+/* ORCID */
+.orcid-link {
+  width: 26px;
+  height: 26px;
+  background: #a6ce39;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orcid-text {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+}
+
+/* LinkedIn */
+.hero-icons a:nth-child(4) i {
+  color: #0a66c2;
+}
+
+/* Vertical divider */
+.hero-divider {
+  width: 1px;
+  height: 410px;
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(11,46,107,.45),
+    transparent
+  );
+}
+
+/* Right text column */
+.hero-text-col {
+  max-width: 720px;
+
+  /* move the whole block */
+  padding-left: 20px;
+  padding-top: 95px;
+}
+
+/* Name */
+.hero-name {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #2f2f2f;
+  font-family: inherit;
+  position: static;
+}
+
+/* Role */
+.hero-role {
+  margin: 0 0 2.2rem 0;
+  font-size: 1.4rem;
+  font-weight: 350;
+  color: #0b2e6b;
+  font-family: inherit;
+}
+
+/* Summary text */
+.hero-summary {
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #2f2f2f;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+/* Button */
+.hero-btn {
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.75rem 1.6rem;
+
+  background: var(--navy-blue);
+  color: #ffffff !important;
+
+  border: 1.5px solid var(--navy-blue);
+  border-radius: 999px;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  text-decoration: none !important;
+
+  transition:
+    background .25s ease,
+    border-color .25s ease,
+    transform .25s ease;
+}
+
+.hero-btn:hover {
+
+  background: #5a7bab;
+  border-color: #5a7bab;
+
+  color: #ffffff !important;
+
+  transform: translateY(-2px);
+}
+
+.hero-btn i {
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* Mobile */
+@media (max-width: 1000px) {
+
+  .hero-wrapper {
+    min-height: auto;
+    margin-top: 0;
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+    row-gap: 2rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 260px;
+    height: 360px;
+    border-radius: 130px 130px 20px 20px;
+  }
+
+  .hero-divider {
+    width: min(350px, 80%);
+    height: 1px;
+    margin: 0 auto;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(11, 46, 107, 0.45),
+      transparent
+    );
+  }
+
+  .hero-text-col {
+    padding-top: 0;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .hero-name {
+    font-size: 2.3rem;
+    color: #2f2f2f;
+  }
+
+  .hero-role {
+    font-size: 1.25rem;
+    color: #b85c2d;
+  }
+
+  .hero-summary {
+    font-size: 1.05rem;
+  }
+}

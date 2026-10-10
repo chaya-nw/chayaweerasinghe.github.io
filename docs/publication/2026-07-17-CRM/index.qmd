@@ -1,0 +1,25 @@
+---
+title: "Rationale and guidance for implementing the continual reassessment method for dose-finding in controlled human infection model studies"
+
+author:
+  - Chaya Weerasinghe
+  - Joshua Osowicki
+  - Julie A. Simpson
+  - Tim Crocker-Buque
+  - James McCarthy
+  - Eloise Williams
+  - David J. Price
+
+date: "2026-07-17"
+slug: CRM
+
+categories:
+  - Preprint
+  - Model misspecification
+  - Approximate Bayesian computation
+  - Robust Bayesian inference
+
+subtitle: "medRxiv preprint"
+
+publication-url: "https://doi.org/10.64898/2026.07.16.26358128 "
+---

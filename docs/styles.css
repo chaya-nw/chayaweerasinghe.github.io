@@ -1,6 +1,23 @@
 /* css styles */
 
 
+.navbar-brand {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 100px;
+}
+
+
+.navbar-brand .navbar-title {
+  display: none;
+}
+
+.navbar-brand img {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* heading, subtitle, and blurb */
 .entity-contents {
   text-align: right !important;
@@ -97,4 +114,97 @@ a:not([class]):hover {
   text-decoration: none;
 }
   
+  
+/* =====================================================
+   SHARED INNER-PAGE HEADING
+===================================================== */
+
+:root {
+  --site-content-width: 1180px;
+  --site-page-padding: 2rem;
+  --navy-blue: #0b2e6b;
+  --page-cream: #FDFBF7;
+  --paragraph-color: #2f2f2f;
+}
+
+.page-heading {
+  width: 90vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;
+
+  padding-top: 0.8rem;
+  padding-right: max(
+    var(--site-page-padding),
+    calc((100vw - var(--site-content-width)) / 2)
+  );
+  padding-bottom: 1.5rem;
+  padding-left: max(
+    var(--site-page-padding),
+    calc((100vw - var(--site-content-width)) / 2)
+  );
+
+  background: linear-gradient(
+    135deg,
+    #fdfbf7 0%,
+    #f7fafc 40%,
+    #eef5fb 100%
+  );
+}
+
+.page-section-title {
+  display: block;
+  margin: 0 0 0.35rem;
+
+  color: var(--navy-blue) !important;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.page-heading p {
+  max-width: 700px;
+  margin: 0 !important;
+
+  color: #000000;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.page-heading::after {
+  content: "";
+  display: block;
+
+  width: 90px;
+  height: 2px;
+  margin-top: 1rem;
+
+  background: rgba(11, 46, 107, 0.20);
+}
+
+@media (max-width: 850px) {
+  :root {
+    --site-page-padding: 1.5rem;
+  }
+
+  .page-heading {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1.3rem;
+  }
+
+  .page-section-title {
+    font-size: 2rem;
+  }
+
+  .page-heading p {
+    font-size: 1.05rem;
+  }
+}
 

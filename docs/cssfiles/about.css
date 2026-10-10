@@ -1,0 +1,534 @@
+/* =====================================================
+   ABOUT PAGE
+===================================================== */
+
+:root {
+  --about-content-width: 1180px;
+  --about-page-padding: 2rem;
+  --navy-blue: #0b2e6b;
+  --page-cream: #FDFBF7;
+  --paragraph-color: #2f2f2f;
+}
+
+/* Ensure sizing is predictable */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove extra Quarto title spacing */
+#title-block-header {
+  margin-bottom: 0;
+}
+
+/* General links */
+a:not([class]):link,
+a:not([class]):visited {
+  color: #354d72;
+  text-decoration: none;
+}
+
+a:not([class]):hover {
+  color: #1051e8;
+  text-decoration: none;
+}
+
+
+/* =====================================================
+   PAGE HEADING
+===================================================== */
+
+.page-heading {
+  width: 90vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;
+
+
+  /*
+    This keeps the heading text aligned with the left edge
+    of the photo and the cards below.
+  */
+  padding-top: 0.8rem;
+  padding-right: max(
+    var(--about-page-padding),
+    calc((100vw - var(--about-content-width)) / 2)
+  );
+  padding-bottom: 1.5rem;
+  padding-left: max(
+    var(--about-page-padding),
+    calc((100vw - var(--about-content-width)) / 2)
+  );
+
+  background: linear-gradient(
+    135deg,
+    #fdfbf7 0%,
+    #f7fafc 40%,
+    #eef5fb 100%
+  );
+}
+
+/* Custom page title */
+.page-heading .about-section-title {
+  display: block;
+
+  margin: 0 0 0.35rem;
+
+  color: var(--navy-blue) !important;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+/* Heading description */
+.page-heading p {
+  max-width: 700px;
+  margin: 0 !important;
+
+  color: #000000;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Small decorative line */
+.page-heading::after {
+  content: "";
+  display: block;
+
+  width: 90px;
+  height: 2px;
+  margin-top: 1rem;
+
+  background: rgba(11, 46, 107, 0.20);
+}
+
+
+/* =====================================================
+   ABOUT CONTENT
+===================================================== */
+
+.about-wrapper {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+
+  padding: 1rem var(--about-page-padding) 5rem;
+
+  background: var(--page-cream);
+}
+
+/* Photo | Biography */
+.about-main {
+  width: 100%;
+  max-width: var(--about-content-width);
+  margin: 0 auto 4rem;
+
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  column-gap: 3rem;
+  align-items: start;
+}
+
+/* Left image column */
+.about-image-col {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Profile image */
+.about-profile-image {
+  display: block;
+
+  width: 320px;
+  height: 480px;
+
+  object-fit: cover;
+  object-position: center top;
+
+  border: none;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Right biography column */
+.about-text-col {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Biography text */
+.about-text {
+  width: 100%;
+  max-width: 900px;
+
+  color: var(--paragraph-color);
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.about-text p {
+    max-width: 900px;
+    text-align: justify;
+}
+
+/* Biography links */
+.about-text a,
+.about-text a:visited {
+  color: #354d72;
+  text-decoration: none;
+}
+
+.about-text a:hover {
+  color: #1051e8;
+}
+
+
+/* =====================================================
+   EDUCATION + RESEARCH INTERESTS
+===================================================== */
+
+.about-details-grid {
+  width: 100%;
+  max-width: var(--about-content-width);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+/* Cards */
+.about-details-card {
+  padding: 2rem;
+
+  background: rgba(255, 255, 255, 0.65);
+
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Card headings */
+.about-card-title {
+  margin: 0 0 1.5rem;
+
+  color: var(--navy-blue);
+
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.about-card-title i {
+  margin-right: 0.5rem;
+}
+
+
+/* =====================================================
+   EDUCATION ITEMS
+===================================================== */
+
+.education-item + .education-item {
+  margin-top: 1.8rem;
+}
+
+.education-item h3 {
+  margin: 0 0 0.35rem;
+
+  color: var(--paragraph-color);
+
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.education-item p {
+  margin: 0 0 0.2rem;
+
+  color: var(--paragraph-color);
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.education-item span {
+  color: #64605f;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   RESEARCH INTERESTS
+===================================================== */
+
+.research-interest-list {
+  margin: 0;
+  padding-left: 1.3rem;
+
+  color: var(--paragraph-color);
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.research-interest-list li {
+  margin-bottom: 0.65rem;
+}
+
+
+/* Move the whole About page content slightly right */
+.page-heading,
+.about-main,
+.about-details-grid {
+    position: relative;
+    left: -5px;
+}
+
+/* =====================================================
+   MY JOURNEY SECTION
+===================================================== */
+
+.journey-section {
+  width: 100%;
+  max-width: var(--about-content-width);
+
+  margin: 8rem auto 0;
+  padding: 0 0 5rem;
+}
+
+.journey-heading {
+  max-width: 760px;
+
+  margin-bottom: 2rem;
+}
+
+.journey-heading h2 {
+  margin: 0 0 0.45rem;
+
+  color: var(--navy-blue);
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.journey-heading p {
+  margin: 0;
+
+  color: var(--paragraph-color);
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.journey-heading::after {
+  content: "";
+  display: block;
+
+  width: 75px;
+  height: 2px;
+
+  margin-top: 1rem;
+
+  background: rgba(11, 46, 107, 0.20);
+}
+
+.journey-figure-wrapper {
+  width: 100%;
+
+  padding: 1.5rem;
+
+  background: linear-gradient(
+    135deg,
+    #fdfbf7 0%,
+    #f7fafc 45%,
+    #eef5fb 100%
+  );
+
+  border: 1px solid rgba(11, 46, 107, 0.14);
+  border-radius: 18px;
+
+  overflow: hidden;
+}
+
+.journey-figure {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  margin: 0 auto;
+
+  border-radius: 12px;
+}
+
+
+/* =====================================================
+   JOURNEY SECTION — TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .journey-section {
+    margin-top: 3.5rem;
+  }
+
+  .journey-figure-wrapper {
+    padding: 1rem;
+  }
+}
+
+
+/* =====================================================
+   JOURNEY SECTION — MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .journey-section {
+    margin-top: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .journey-heading h2 {
+    font-size: 1.6rem;
+  }
+
+  .journey-heading p {
+    font-size: 0.98rem;
+  }
+
+  .journey-figure-wrapper {
+    padding: 0.65rem;
+
+    border-radius: 12px;
+  }
+
+  .journey-figure {
+    border-radius: 8px;
+  }
+}
+
+
+
+
+/* =====================================================
+   ABOUT BUTTON
+===================================================== */
+.about-actions {
+  margin-top: 2rem;
+}
+
+.about-journey-btn {
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.75rem 1.6rem;
+
+  background: var(--navy-blue);
+  color: #ffffff !important;
+
+  border: 1.5px solid var(--navy-blue);
+  border-radius: 999px;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  text-decoration: none !important;
+
+  transition:
+    background .25s ease,
+    border-color .25s ease,
+    transform .25s ease;
+}
+
+.about-journey-btn:hover {
+
+  background: #5a7bab;
+  border-color: #5a7bab;
+
+  color: #ffffff !important;
+
+  transform: translateY(-2px);
+}
+
+.about-journey-btn i {
+  font-size: 0.9rem;
+}
+
+
+/* =====================================================
+   TABLET + MOBILE
+===================================================== */
+
+@media (max-width: 850px) {
+
+  :root {
+    --about-page-padding: 1.5rem;
+  }
+
+  .page-heading {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+
+    padding-top: 1rem;
+    padding-bottom: 1.3rem;
+  }
+
+  .page-heading .about-section-title {
+    font-size: 2rem;
+  }
+
+  .page-heading p {
+    font-size: 1.05rem;
+  }
+
+  .about-wrapper {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .about-main {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+
+  .about-image-col {
+    justify-content: center;
+  }
+
+  .about-profile-image {
+    width: min(320px, 85vw);
+    height: auto;
+    aspect-ratio: 2 / 3;
+  }
+
+  .about-text {
+    max-width: none;
+    font-size: 1.03rem;
+  }
+
+  .about-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
